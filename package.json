@@ -1,0 +1,22 @@
+{
+  "name": "proshop",
+  "version": "1.0.0",
+  "description": "MERN shopping Cart app",
+  "main": "server.js",
+  "scripts": {
+    "start": "node backend/server" 
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fadialset/ProShop.git"
+  },
+  "author": "Fadi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fadialset/ProShop/issues"
+  },
+  "homepage": "https://github.com/fadialset/ProShop#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
