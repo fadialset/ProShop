@@ -2,9 +2,10 @@ import {
     PRODUCT_LIST_FALE,
     PRODUCT_LIST_REQUEST,
     PRODUCT_LIST_SUCCESS,
+    PRODUCT_DETAILS_REQUEST,
     PRODUCT_DETAILS_SUCCESS,
-    PRODUCT_DETAILS_FALE,
-    PRODUCT_DETAILS_REQUEST
+    PRODUCT_DETAILS_FALE
+    
 } from '../constants/productConstants'
 import axios from 'axios'
 
