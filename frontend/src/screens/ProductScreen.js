@@ -8,7 +8,7 @@ import Loader from '../components/Loader'
 import { listProductDetails } from '../actions/productActions'
 
 const ProductScreen = ({history , match }) => {
-    const [qty, setQty] = useState(0)
+    const [qty, setQty] = useState(1)
 
     const dispatch = useDispatch(listProductDetails(match.params.id))
     const productDetails = useSelector(state => state.productDetails)
@@ -77,11 +77,13 @@ const ProductScreen = ({history , match }) => {
                                    <Row>
                                        <Col>Qty</Col>
                                        <Col>
-                                       <Form.Control as='select' value={qty} onChange={(e)=>{
+                                       <Form.Control as='select' value={qty} onChange={(e) =>
                                            setQty(e.target.value)
-                                       }}>
+                                       }>
                                           { [...Array(product.countInStock).keys()].map(x =>(
-                                               <option key={x + 1} value={x + 1}>{x + 1}</option>
+                                               <option key={x + 1} value={x + 1}>
+                                                   {x + 1}
+                                                </option>
                                            ))}
                                        </Form.Control>
                                        </Col>
